@@ -10,9 +10,6 @@ COPY requirements.txt .
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Install Mage
-RUN pip install mage-ai dbt-core
-
 # Copy the entire project into the container
 COPY . .
 
