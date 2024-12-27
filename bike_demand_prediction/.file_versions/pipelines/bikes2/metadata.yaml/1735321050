@@ -1,55 +1,53 @@
 blocks:
 - all_upstream_blocks_executed: true
   color: null
-  configuration:
-    file_source:
-      path: data_loaders/data_ingestion.py
+  configuration: {}
   downstream_blocks:
-  - data_processing
+  - batch_prediction
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: data_ingestion
+  name: data_ingestion_bikes2
   retry_config: null
-  status: executed
+  status: not_executed
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: data_ingestion
+  uuid: data_ingestion_bikes2
 - all_upstream_blocks_executed: true
-  color: grey
-  configuration: {}
-  downstream_blocks:
-  - model_training
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: data_processing
-  retry_config: null
-  status: executed
-  timeout: null
-  type: custom
-  upstream_blocks:
-  - data_ingestion
-  uuid: data_processing
-- all_upstream_blocks_executed: true
-  color: purple
+  color: null
   configuration: {}
   downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: model_training
+  name: data_processing_bikes2
   retry_config: null
-  status: failed
+  status: updated
   timeout: null
-  type: custom
+  type: scratchpad
+  upstream_blocks: []
+  uuid: data_processing_bikes2
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    file_source:
+      path: transformers/batch_prediction.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: batch_prediction
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
   upstream_blocks:
-  - data_processing
-  uuid: model_training
+  - data_ingestion_bikes2
+  uuid: batch_prediction
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}

@@ -57,4 +57,4 @@ def process_data(*args, **kwargs):
         print(f"An error occurred during data processing: {e}")
         raise
 if __name__ == "__main__":
-    process_data()
+    load_data()

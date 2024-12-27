@@ -1,3 +1,9 @@
+if 'custom' not in globals():
+    from mage_ai.data_preparation.decorators import custom
+if 'test' not in globals():
+    from mage_ai.data_preparation.decorators import test
+
+
 from mage_ai.data_preparation.decorators import transformer
 import pandas as pd
 import os
@@ -5,7 +11,7 @@ import os
 PROCESSED_DATA_PATH = 'data/processed'
 FINAL_DATA_PATH = 'data/final'
 
-@transformer
+@custom
 def process_data(*args, **kwargs):
     """
     Process the data and prepare it for model training.
@@ -56,5 +62,5 @@ def process_data(*args, **kwargs):
     except Exception as e:
         print(f"An error occurred during data processing: {e}")
         raise
-if __name__ == "__main__":
-    process_data()
+
+ 
