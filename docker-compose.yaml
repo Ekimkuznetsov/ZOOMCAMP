@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  mage:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "6789:6789"
+    volumes:
+      - ./bike_demand_prediction:/app/bike_demand_prediction
+      - ./mage_data:/app/mage_data
+    environment:
+      - MAGE_PROJECT_PATH=/app/bike_demand_prediction
