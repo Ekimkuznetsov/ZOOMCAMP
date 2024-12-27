@@ -5,7 +5,7 @@ Unit tests for the data processing block.
 import os
 import pandas as pd
 import unittest
-from mage_pipeline_repo.pipelines.bike_demand_prediction.data_processing import execute
+from src.data_processing import execute
 
 
 class TestDataProcessing(unittest.TestCase):

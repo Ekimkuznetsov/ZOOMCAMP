@@ -4,7 +4,7 @@ Unit tests for the batch prediction block.
 
 import os
 import unittest
-from mage_pipeline_repo.pipelines.bike_demand_prediction.batch_prediction import execute
+from src.batch_prediction import execute
 
 
 class TestBatchPrediction(unittest.TestCase):

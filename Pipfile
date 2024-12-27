@@ -17,6 +17,7 @@ boto3 = "*"
 evidently = "*"
 mage = "*"
 mage-ai = "*"
+mlflow = "*"
 
 [dev-packages]
 ipykernel = "*"

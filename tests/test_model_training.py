@@ -5,7 +5,7 @@ Unit tests for the model training block.
 import os
 import shutil
 import unittest
-from mage_pipeline_repo.pipelines.bike_demand_prediction.model_training import execute
+from src.model_training import execute
 
 
 class TestModelTraining(unittest.TestCase):

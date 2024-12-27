@@ -52,3 +52,6 @@ def load_data(*args, **kwargs):
     except Exception as e:
         print(f"An error occurred during data ingestion: {e}")
         raise
+
+if __name__ == "__main__":
+    load_data()
