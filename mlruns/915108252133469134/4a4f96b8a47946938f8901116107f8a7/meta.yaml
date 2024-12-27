@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/ZOOMCAMP/mlruns/915108252133469134/4a4f96b8a47946938f8901116107f8a7/artifacts
+end_time: 1735334783013
+entry_point_name: ''
+experiment_id: '915108252133469134'
+lifecycle_stage: active
+run_id: 4a4f96b8a47946938f8901116107f8a7
+run_name: able-ray-230
+run_uuid: 4a4f96b8a47946938f8901116107f8a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735334771625
+status: 3
+tags: []
+user_id: codespace
