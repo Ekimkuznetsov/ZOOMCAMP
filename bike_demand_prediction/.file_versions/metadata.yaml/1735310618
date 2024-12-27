@@ -1,0 +1,17 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - data_processing
+  executor_config: null
+  executor_type: local_python
+  has_callback: null
+  language: python
+  name: data_ingestion
+  retry_config: null
+  status: failed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: data_ingestion
